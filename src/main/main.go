@@ -8,4 +8,6 @@ func main(){
 	http.HandleFunc("/", func(w http.ResponseWriter, req *http.Request){
 			w.Write([]byte("Hello world"))
 			})
+	
+	http.ListenAndServe(":8888", nil)
 	}
